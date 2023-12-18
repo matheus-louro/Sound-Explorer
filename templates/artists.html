@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Artist
+{% endblock %}
+
+{% block main %}
+    <main class="artist_main">
+        <span class="description">With each click, we recommend an artist similar to the ones you listen to the most!</span>
+        <button id="nextArtist" class="action-button">Next artist</button>
+        <div class="embed-responsive embed-responsive-16by9 iframe">
+            <iframe id="artistFrame" src="https://open.spotify.com/embed/artist/{{ artist_id }}?utm_source=generator&theme=0" frameborder="0" 
+            allowtransparency="true" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </main>
+{% endblock %}

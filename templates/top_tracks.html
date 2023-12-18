@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Top tracks
+{% endblock %}
+
+{% block main %}
+    <main class="top_tracks_main">
+        <span class="description">Stay up to date with the current worldwide top played songs!</span>
+        <div class="embed-responsive embed-responsive-16by9 iframe">
+            <iframe style="border-radius:12px" id="songsFrame" src="https://open.spotify.com/embed/playlist/37i9dQZEVXbMDoHDwVN2tF?utm_source=generator&theme=0" 
+            frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <span class="description">Discover the most listened songs in your country!</span>
+        <div class="embed-responsive embed-responsive-16by9 iframe">
+            <iframe style="border-radius:12px" id="songsFrame" src="https://open.spotify.com/embed/playlist/{{ playlist_id }}?utm_source=generator&theme=0" 
+            frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </main>
+{% endblock %}

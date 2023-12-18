@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <main class="index-main">
+        <h6>Start exploring new songs and artists!</h6>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item artist active">
+                    <a href="/artists">
+                        <div class="carousel-area">
+                            <h1>Artists</h1>
+                            <span>Discover a new artist similar to your favorites</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="carousel-item songs">
+                    <a href="/songs">
+                        <div class="carousel-area">
+                            <h1>Songs recommendation</h1>
+                            <span>Listen to new songs similar to your most played ones</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="carousel-item top_tracks">
+                    <a href="/top_tracks">
+                        <div class="carousel-area">
+                            <h1>Top Tracks</h1>
+                            <span>Listen to the most played songs of the moment</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>        
+    </main>
+
+{% endblock %}
