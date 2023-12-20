@@ -1,4 +1,5 @@
 # SoundExplorer
+#### Projeto final do curso CS50’s Introduction to Computer Science | Harvard University
 ## Introduction:
 The SoundExplorer project was created with the aim of expanding the user's musical taste. Many people find themselves stuck with certain artists and music genres, and they may not give other artists a chance. The goal of the project is precisely to reverse this situation and help people discover new songs and appreciate this art form more.
 
